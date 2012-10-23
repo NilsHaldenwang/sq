@@ -1,0 +1,40 @@
+Aufgabe 1.2 (Begriffe zur Software-Qualität)
+============================================
+
+a)
+
+Qualitätsmerkmal <-> Zuverlässigkeit
+Qualitätsmaß <-> MTBF (Mean-Time-Between-Failures)
+Ausprägung eines Qualitätsmaßes <-> > 500s
+
+Ein Qualitätsmerkmal ist eine abstrakte Eigenschaft von Software, welche
+mittels eines Qualitätsmaßes quantifiziert und mit einer angestreben
+Qualitätsausprägung verglichen werden kann.
+
+b)
+
+Ein weiteres Beispiel für ein Qualitätsmerkmal ist die Wirtschaftlichkeit.
+Ein Qualitätsteilmerkmal der Wirtschaftlichkeit sind die Entwicklungskosten.
+Als Qualitätsmaß für die Entwicklungskosten könnte man die Mann-Tage pro
+Feature verwenden. Eine beispielhafte Ausprägung wäre hier "10".
+
+c)
+
+Die Gleichung aus der Vorlesung für die Verfügbarkeit lautet:
+
+Verfügbarkeit = MTBF / ( MTBF + MTTR )
+
+Es sind also zunächst die MTBF (Mean time between Failure) und die
+MTTR (Mean Time to Repair) zu berechnen.
+
+Da in dem Log keine Zeiteinheit steht, nehmen wir an, dass die Zahlen nach dem
+Doppelpunkt Minuten sind.
+
+Es gibt Fehler zu den Zeiten t2, t4 und t6, also insgesamt drei Fehler.
+Die Betriebsdauer beträgt t6 - t1 = 28 Minuten, also MTBF = 28/3 ~= 9.33.
+
+Das Zeitintervall von Fehler t2 bis zur Reperatur beträgt 1 Minute, bei
+Fehler t4 waren 4 Minuten und die Fehlerbehebung von t6 liegt nicht mehr
+im Beobachtungszeitraum. Also ist MTTR = (4 + 1) / 2 = 2.5
+
+Damit ergibt sich nach obiger Formel für die Verfügbarkeit ~= 0.788.
