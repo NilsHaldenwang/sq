@@ -27,6 +27,11 @@ import javax.swing.JTextArea;
 public class TextEditor extends JFrame {
 
     /**
+     * version uid for serialisation
+     */
+    private static final long serialVersionUID = -8095339814184248330L;
+
+    /**
      * the menubar
      */
     private JMenuBar menuBar;
