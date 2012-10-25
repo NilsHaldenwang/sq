@@ -1,0 +1,45 @@
+Aufgabe 1.1 (Ad-hoc-Maßnahmen zur Qualitätssicherung, Fehlerklassifikation)
+===========================================================================
+
+a)
+
+- Syntaxcheck durch die IDE bzw. den Compiler 
+- Definition von "Blöcken", jeder Block ist ein Feature, Implementation der
+  Blöcke "sichert" das Vorhandensein des jeweiligen Features
+- "Auffangen" von Exceptions, Programm kompiliert sonst nicht
+
+b)
+
+Funktionstests mit verschiedenen Eingaben:
+- Buchstaben zählen mit Umlauten
+- Zeilen sortieren, wenn Zeilen doppelt vorkommen
+- Speichern bzw. Öffnen von Dateien, wenn nicht ausreichend Berechtigungen
+  vorhanden sind
+
+c)
+
+- fehlende Klammern (Syntaxfehler)
+- falsch verwendete Datenstruktur (Semantischer Fehler)
+- Berücksichtigung des richtigen Zeichens für den Zeilenumbruch
+  (Portabilitätsfehler)
+- doppelte Zeilen waren nach dem Sortieren nur noch ein mal vorhanden
+  (Spezifikationsfehler)
+
+d)
+
+Fehlerklassifikation ist nützlich, um zu bestimmen, in welcher Phase der
+Entwicklung ein Fehler entdeckt und behoben werden sollte.
+
+e)
+
+Die Maßnahmen aus Teil a) passieren quasi automatisiert. Sie werden dem
+Entwickler durch die Programmiersprache und / oder seine Entwicklungsumgebung
+"geschenkt". Sie helfen dabei insbesondere besonders grobe Fehler während der
+Entwicklung zu vermeiden und ein zumindest zunächst laufbares Programm zu
+erhalten. Die impliziten Maßnahmen hängen im Wesentlichen von der verwendeten
+Programmiersprache und Entwicklungsumgebung ab.
+Die Maßnahmen aus Teil b) sind denen aus Teil a) nachgelagert. Sie greifen,
+wenn die Anwendung bereits lauffähig ist und sollen Fehler vermeiden bzw.
+beseitiegen, die einen Absturz der Anwendung zur Folge haben. Die explizit zu
+treffenden Maßnahmen hängen größtenteils von den auftretenden bzw. erwarteten
+Fehlern und der Kreativität des Testers ab.
