@@ -1,0 +1,31 @@
+Aufgabe 2.1 - Magisches Dreieck
+================================================================================
+
+a) Jede Ecke des Dreiecks beschreibt eine der Größen "Qualität", "Kosten" oder
+"Zeit".  Das Dreieck kann man sich in einem 3-D-Raum mit entsprechenden Achsen
+vorstellen.  Der Flächeninhalt des Dreiecks bleibst stets konstant.
+
+b) Die konstante Fläche impliziert, dass eine Verbesserung einer Größe zu einer
+Verschlechterung einer anderen führt.
+
+  Beispiel: Qualitätsoptimierung
+  ------------------------------
+  Eine Steigerung der Qualität einer Software erfordert die Investition von
+  mehr Entwicklungszeit oder aber mehr Manpower in Form weiterer Entwickler,
+  die wiederrum die Kosten in die Höhe treiben.
+
+  Beispiel: Kostenoptimierung
+  ---------------------------
+  Zur Optimierung der Kosten muss entweder die Qualität reduziert werden, oder
+  aber die Entwicklungszeit verkürzt werden. Eine Reduktion der Qualität macht
+  nur bis zu einem gewissen Grad sind, daher ist es vermutlich besser die
+  Entwicklungszeit durch effizienteres Arbeiten zu verkürzen.
+
+  Beispiel: Zeitoptimierung
+  -------------------------
+  Zur Optimierung der Entwicklungszeit können die Kosten erhöht oder die
+  Qualität reduziert werden. Auch hier macht eine Reduktion der Qualität nur
+  bis zu einem gewissen Grad Sinn. Auch bei den Kosten hat man aber je nach
+  Projekt nur einen gewissen Spielraum, da meistens auch das Budget begrenzt
+  ist. Dennoch macht es vermutlich mehr Sinn weitere Entwickler dazuzuholen,
+  als die Qualität zu sehr zu reduzieren.
