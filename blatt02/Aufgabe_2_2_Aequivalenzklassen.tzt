@@ -1,0 +1,38 @@
+Aufgabe 2.2 - Äquivalenzklassenanalyse und Testfallgenerierung
+================================================================================
+
+a)
+  Äquivalenzklassen: Material
+  ---------------------------
+  (1) Die gültige Material-Eingabe-Äquivalenzklasse besteht aus der Menge
+  erlaubter Fliesenmaterialien: {Ton, Marmor, Granit}.
+
+  (2) Die ungültige Material-Eingabe-Äquivalenzklasse beinhaltet alle anderen
+  möglichen Eingaben, z.B. "Stahl" oder "Holz".
+
+  Äquivalenzklassen: Kantenlänge
+  ------------------------------
+  (3) Die gültige Eingabe-Äquivalenzklasse für die Kantenlänge besteht aus dem
+  Eingabebereich [17,68].
+
+  (4) Die ungültige Eingabe-Äquivalenzklasse für die Kantenlänge besteht aus
+  dem Intervall [-unendlich,17[ vereinigt mit ]68,unendlich], also der
+  komplementären Menge zu der gültigen Äquivalenzklasse.
+
+  Äquivalenzklassen: Menge
+  ------------------------
+  (5) Die gültige Eingabe-Äquivalenzklasse für die Menge ist der Eingabebereich
+  [1,9999], wobei hier wohl nur ganze Zahlen zugelassen sind.
+
+  (6) Alle anderen Zahlen, also [-unendlich,1[ vereinigt mit ]9999,unendlich]
+  sind die ungültige Eingabe-Äquivalenzklasse für die Menge.
+
+  Äquivalenzklassen: Auftragsnummer
+  ---------------------------------
+  (7) Die gültige Ausgabe-Äquivalenzklasse für die Auftragsnummern sind alle
+  Nummern, die mit "F" beginnen, mit "2" enden und einzigartig im System
+  vorhanden sind.
+
+  (8) Die ungültige Ausgabe-Äquivalenzklasse sind alle Auftragsnummern, welche
+  mehrfach vergeben werden oder nicht mit "F" beginnen und "2" enden.
+
