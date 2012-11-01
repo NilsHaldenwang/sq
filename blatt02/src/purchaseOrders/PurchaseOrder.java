@@ -1,7 +1,7 @@
 package purchaseOrders;
 
 /**
- * @author nils
+ * 
  *
  */
 public class PurchaseOrder {
@@ -35,12 +35,13 @@ public class PurchaseOrder {
 		this.material = material;
 		this.edgeLength = edgeLength;
 		this.quantity = quantity;
+		this.orderNumber = "unprocessed";
 		validateData();
 		generateOrderNumber();
 	}
 	
 	private void generateOrderNumber(){
-		orderNumber =  "F" + orderCount + "2";
+		orderNumber =  "F" + orderCount++ + "2";
 	}
 	
 	/**
@@ -147,7 +148,16 @@ public class PurchaseOrder {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		try {
+			if(args.length != 3){
+				System.out.println("Usage: java purchaseOrders.PurchaseOrder MATERIAL KANTENLAENGE MENGE");
+			} else {
+				PurchaseOrder po = new PurchaseOrder(args[0], Float.parseFloat(args[1]), Integer.parseInt(args[2]));
+				System.out.println("Auftrag erzeugt mit Nummer: " + po.getOrderNumber());
+			}
+		} catch(IllegalArgumentException e){
+			System.out.println("Fehler: " + e.getMessage());
+		}
 
 	}
 
