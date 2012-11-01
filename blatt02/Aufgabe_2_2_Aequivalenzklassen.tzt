@@ -34,5 +34,39 @@ a)
   vorhanden sind.
 
   (8) Die ungültige Ausgabe-Äquivalenzklasse sind alle Auftragsnummern, welche
-  mehrfach vergeben werden oder nicht mit "F" beginnen und "2" enden.
+  mehrfach vergeben werden oder nicht mit "F" beginnen und "2" auf enden.
+
+b)
+  Grenzwerte für Material
+  ----------------------
+  Die Äquivalenzklasse ist Mengenwertig, es gibt also keine Grenzwerte.
+
+  Grenzwerte für Kantenlänge
+  --------------------------
+  16,17,18,67,68,69
+
+  Grenzwerte für Menge
+  --------------------
+  0,1,2,9998,9999,10000
+
+  Grenzwerte für Auftragsnummer
+  -----------------------------
+  Keine Grenzwerte vorhanden, die Nummer muss eine bestimmte Bedingung
+  erfüllen.
+
+  Testfälle (Material, Kantenlänge, Menge) (Äquivalenzklassen) -> Rückgabe:
+  -------------------------------------------------------------------------
+  [1] (Ton, 18, 1)        (1, 3, 5, 7) -> Gültige Auftragsnummer
+  [2] (Käse, 67, 2)       (2, 3, 5)    -> Fehler wegen Material
+  [3] (Marmor, 16, 9998)  (1, 4, 5)    -> Fehler wegen Kantenlänge zu klein
+  [4] (Marmor, 69, 9999)  (1, 4, 5)    -> Fehler wegen Kantenlänge zu groß
+  [5] (Granit, 17, 0)     (1, 2, 6)    -> Fehler wegen Menge zu klein
+  [6] (Granit, 68, 10000) (1, 2, 6)    -> Fehler wegen Menge
+
+  Eine ungültige Auftragsnummer kann nicht getestet werden, da diese nicht
+  eingegeben, sondern direkt vom System erzeugt wird, man kann also lediglich
+  prüfen, ob bei korrekten Eingaben eine korrekte Auftragsnummer generiert
+  wird.
+
+
 
