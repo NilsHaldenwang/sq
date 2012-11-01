@@ -61,7 +61,7 @@ b)
   [3] (Marmor, 16, 9998)  (1, 4, 5)    -> Fehler wegen Kantenlänge zu klein
   [4] (Marmor, 69, 9999)  (1, 4, 5)    -> Fehler wegen Kantenlänge zu groß
   [5] (Granit, 17, 0)     (1, 2, 6)    -> Fehler wegen Menge zu klein
-  [6] (Granit, 68, 10000) (1, 2, 6)    -> Fehler wegen Menge
+  [6] (Granit, 68, 10000) (1, 2, 6)    -> Fehler wegen Menge zu groß
 
   Eine ungültige Auftragsnummer kann nicht getestet werden, da diese nicht
   eingegeben, sondern direkt vom System erzeugt wird, man kann also lediglich
