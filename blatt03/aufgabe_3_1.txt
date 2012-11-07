@@ -1,0 +1,44 @@
+a)
+
+Testfall 1: zu wenig Geld eingeworfen, Geld muss 2x nachgeworfen werden, Getränk
+  wird ausgewählt und Rückgeld erhalten
+Testfall 2: zu wenig Geld eingeworfen, der Geldrückgabehebel wird gezogen
+Testfall 3: Geld wird passend eingeworfen, der Geldrückgabehebel wird gezogen
+
+b)
+
+Zustände:
+1: Bereit
+2: Geldeinwurf erwarten
+3: Getränkewahl erwarten
+4: Einschenken
+5: Geld zurückgeben
+
+Aktionen:
+1: Geld zwischenlagern
+2: Geld zurückgeben
+3: Getränk ausschenken
+4: Rückgeld ausgeben
+
+                                      | 1 | 2 | 3 | 4 | 5
+--------------------------------------+---+---+---+---+---
+Geld einwerfen                        | 2 | 2 |
+[eingeworfenes Geld < Getränkepreis]  | 1 | 1 |
+--------------------------------------+---+---+---+---+---
+Geld einwerfen                        | 3 | 3 |
+[eingeworfenes Geld >= Getränkepreis] | 1 | 1 |
+--------------------------------------+---+---+---+---+---
+Geldrückgabehebel ziehen              |   | 1 | 1 |
+                                      |   | 2 | 2 |
+--------------------------------------+---+---+---+---+---
+Getränk wählen                        |   |   | 4 |
+                                      |   |   | 3 |
+--------------------------------------+---+---+---+---+---
+eingeschenkt                          |   |   |   | 5 |
+                                      |   |   |   |   |
+--------------------------------------+---+---+---+---+---
+keine Aktion                          |   |   |   |   | 1
+                                      |   |   |   |   | 4
+
+c)
+
