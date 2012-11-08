@@ -13,32 +13,29 @@ Zustände:
 3: Getränkewahl erwarten
 4: Einschenken
 5: Geld zurückgeben
+6: Fehlverhalten
 
 Aktionen:
 1: Geld zwischenlagern
 2: Geld zurückgeben
 3: Getränk ausschenken
-4: Rückgeld ausgeben
 
                                       | 1 | 2 | 3 | 4 | 5
 --------------------------------------+---+---+---+---+---
-Geld einwerfen                        | 2 | 2 |
-[eingeworfenes Geld < Getränkepreis]  | 1 | 1 |
+Geld einwerfen                        | 2 | 2 | 3 | 4 | 5
+[eingeworfenes Geld < Getränkepreis]  | 1 | 1 |   |   |
 --------------------------------------+---+---+---+---+---
-Geld einwerfen                        | 3 | 3 |
-[eingeworfenes Geld >= Getränkepreis] | 1 | 1 |
+Geld einwerfen                        | 3 | 3 | 3 | 4 | 5
+[eingeworfenes Geld >= Getränkepreis] | 1 | 1 |   |   |
 --------------------------------------+---+---+---+---+---
-Geldrückgabehebel ziehen              |   | 1 | 1 |
-                                      |   | 2 | 2 |
+Geldrückgabehebel ziehen              | 1 | 1 | 1 | 4 | 5
+                                      |   | 2 | 2 |   |
 --------------------------------------+---+---+---+---+---
-Getränk wählen                        |   |   | 4 |
-                                      |   |   | 3 |
+Getränk wählen                        | 1 | 2 | 4 | 4 | 5
+                                      |   |   | 3 |   |
 --------------------------------------+---+---+---+---+---
-eingeschenkt                          |   |   |   | 5 |
+eingeschenkt                          | 6 | 6 | 6 | 5 | 6
                                       |   |   |   |   |
 --------------------------------------+---+---+---+---+---
-keine Aktion                          |   |   |   |   | 1
+Rückgeld ausgegeben                   | 6 | 6 | 6 | 6 | 1
                                       |   |   |   |   | 4
-
-c)
-
