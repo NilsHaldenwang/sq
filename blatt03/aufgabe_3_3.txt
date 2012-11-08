@@ -1,0 +1,7 @@
+Aufgabe 3.3
+================================================================================
+
+Durch geeignete Verwendung von Enumerationen ist es nicht mehr möglich
+Fliesentypen einzutragen, die nicht in der Enumeration vorhanden sind. Für den
+Test des Backend-Systems ist es also nicht mehr nötig fehlerhafte Eingaben zu
+testen, da der Compiler bereits nur Werte aus der Enumeration zulässt.
