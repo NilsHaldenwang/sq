@@ -1,0 +1,21 @@
+Aufgae 4.1: Syntaxtest
+======================
+
+a) Siehe Zeichnung
+
+b)
+
+Zur Knotenabdeckung muss jeder Knoten mindestens einmal durchlaufen werden. Bei
+jedem der vier Nicht-Terminale gibt es maximal 10 Produktionen, die direkt ein
+Terminalsymbol erzeugen. Es müssen also mindestens 10 Testfälle generiert
+werden.
+
+c)
+
+Unter der Annahme, dass alle Übergänge eines Nicht-Terminals zu einem Terminal
+als "ein" Pfad gelten, benötigt man zwei Testfälle, nämlich einen mit allen
+Stellen, und einen, der keine Zahl erzeugt.
+
+d)
+
+Die Zahl aller möglichen Pfade ist: 4 * 3 * 10 * 10 * 10 = 12000
