@@ -1,0 +1,55 @@
+Aufgabe 4.2: Zweiüberdeckungstest
+=================================
+
+a)
+
+Testfall: Leere Liste
+
+  List<String> in_lstList = null;
+  aiResults = null;
+
+Testfall: Ein Empty-String, eine gerade Zahl, eine
+ungerade Zahl, ein Wort gerader Länge, eine Wort ungerader Länge
+
+  List<String> in_lstList = Arrays.asList("", "42", "23", "hello", "test");
+  aiResults = new int[4];
+
+Testfall: Wie der vorherige, nur mit ungeeignetem Ergebnisarray, da mehrere
+Zweite zu der Verzweigung führen
+
+  List<String> in_lstList = Arrays.asList("", "42", "23", "hello", "test");
+  aiResults = new int[0];
+
+b)
+
+Primitive Zweige sind Zweige, die von der Ausführung anderer Zweige unabhängig
+sind. Ein Primitiver Zweig ist der Try-Catch-Block. Wenn ein Integer geparsed
+werden konnte, dann wird automatisch auch der mit if(bNumberFound) beginnenede
+Block ausgeführt.
+
+Ein weiteres Beispiel wäre die For-Schleife. Sie stellt auch eine Verzweigung
+dar, da sie für eine leere Liste nichts tut und für eine nicht-leere Liste
+ihren Body für jedes Element ausführt. Die Bedingung if (in_lstList != null &&
+!in_lstList.isEmpty()) gewährleistet aber bereits, dass die Liste nicht leer
+ist, der for-Zweig ist damit von dem primitiven Zweig abhängig.
+
+c)
+
+Zweige gehören im Allgemeinen nicht nur zu einem Pfad. Zur Überdeckung gewisser
+Zweige ist es meistens nötig bereits überdeckte Zweige nochmals zu überdecken,
+so dass das Hinzufügen weiterer Testfälle kaum noch Steigerungen in der
+Überdeckung bringt, aber mit viel Aufwand verbunden ist. Außerdem hat man
+schnell den Eindruck bereits eine hohe Überdeckungsrate erreicht zu haben,
+obwohl die signifikanten Stellen vielleicht noch gar nicht berücksichtigt
+wurden.
+
+d)
+
+Der Anweisungsüberdeckungstest ist eine echte Teilmenge des
+Zweigüberdeckungstests. Wenn alle Zweige ausgeführt werden, dann werden auch
+alle Anweisungen ausgeführt. Der Zweigübderdeckungstest ist aber noch
+mächtiger, da er nicht nur die Ausführung der Anweisungen, sondern auch den
+Kontrollfluss testet und insbesondere durch Berücksichtigung der Primitiven
+Zweige für die Berechnung der Abdeckung eine sinvollere Metrik bildet, da bei
+Anweisungsüberdeckung die Abhängigkeiten der Anweisungen nicht berücksichtigt
+werden.

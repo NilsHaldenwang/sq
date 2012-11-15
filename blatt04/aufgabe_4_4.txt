@@ -1,0 +1,11 @@
+Aufgabe 4.4: Pfadüberdeckungstest
+=================================
+
+Es existieren 5 mögliche Pfade durch die Schleife. Da beim ersten Listenelement
+bereits 5 Pfade zur Verfügung stehen sind es beim zweiten Listenelement bereits
+25 mögliche Pfade, da jeder Pfad des ersten gewählt werden kann und dann
+jeweils wieder einer der fünf des Zweiten.  Für 1000 Elemente macht das also
+5^1000 Pfade. Ein derartiger Test erweist sicht also als extrem unpraktikabel.
+Die von der Schleife unabhängigen Pfade hängen nicht von der Zahl der Elemente
+in der Liste ab und können daher im Angesicht der großen Pfadzahl der Schleife
+vernachlässigt werden.
