@@ -1,4 +1,4 @@
-Aufgae 4.2: Anweisungsüberdeckungstest
+Aufgabe 4.2: Anweisungsüberdeckungstest
 ======================================
 
 a) siehe Zeichnung
