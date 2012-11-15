@@ -1,0 +1,18 @@
+Aufgae 4.2: Anweisungsüberdeckungstest
+======================================
+
+a) siehe Zeichnung
+
+b)
+
+Wir haben mehrere Statements, die immer gemeinsam ausgeführt werden zu Gruppen
+zusammengefasst, so wie es auch im Liggesmeyer-Buch gemacht worden ist (siehe
+Graph).
+
+Bei der gegebenen Eingabe werden die Statementgruppen 1,2,3,4,5,6,7,8,13
+ausgeführt. Es fehlen also 9, 10, 11 und 12.
+
+Anweisungsüberdeckungsgrad =
+              Anzahl ausgeführter Anweisungen / Anzahl der Anweisungen
+
+AWDG = 9 / 13 = 0,6923
