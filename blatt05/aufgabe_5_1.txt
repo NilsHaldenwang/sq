@@ -1,0 +1,21 @@
+b)
+
+I:   Pfade unter Vernachlässigung von Schleifen
+II:  abweisende Schleife I genau ein Durchlauf
+III: abweisende Schleife I mindestens zwei Durchläufe
+IV:  abweisende Schleife II genau ein Durchlauf
+V:   abweisende Schleife II mindestens zwei Durchläufe
+
+c)
+
+Es sind mindestens sechs Testfälle notwendig:
+Ia:   n1 n9
+Ib:   n1 n2 n3 n8 n9
+IIa:  n1 n2 n3 n4 n5 (n6 n5)^i n7 n3 n8 n9               i >= 0
+IIIa: n1 n2 n3 (n4 n5 (n6 n5)^i n7 n3)^j n8 n9           i >= 0, j >= 2
+IVa:  n1 n2 n3 n4 n5 n6 n5 n7 n3 (n4 n5 n7 n3)^i n8 n9   i >= 1
+Va:   n1 n2 n3 n4 n5 (n6 n5)^i n7 n3 n8 n9               i >= 2
+
+d)
+
+Der boundary interior Test ist ein Spezialfall des strukturierten Pfadtests.
