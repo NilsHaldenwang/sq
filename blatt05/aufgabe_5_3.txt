@@ -65,25 +65,30 @@ b)
 5: A = C = wahr, B = D = A && B = C && D = (A && B) || (C && D) = falsch
 3: A = A && B = falsch, C = D = C && D = (A && B) || (C && D) = wahr
 1: A = C = (A && B) = (C && D) = (A && B) || (C && D) = falsch
+Jede atomare Entscheidung, jede zusammengesetzte Entscheidung und die
+Gesamtentscheidung sind jeweils ein mal true und ein mal false.
 
 c)
 
-A: 7 und 15
-B: 11 und 15
-C: 2 und 4
-D: 3 und 4
+A:  7 und 15     B = C = w, D = f, (A && B) || (C && D) = A
+B: 11 und 15     A = C = w, D = f, (A && B) || (C && D) = B
+C:  2 und  4     A = B = f, D = w, (A && B) || (C && D) = C
+D:  3 und  4     A = B = f, C = w, (A && B) || (C && D) = D
 
 d)
 
-A: 1 und 7
-B: 4 und 7
-C: 4 und 6
-D: 5 und 6
+A: 1 und 7     B = wahr (oder nicht evaluiert), C = falsch (oder nicht
+               evaluiert), D nicht evaluiert, (A && B) || (C && D) = A
+B: 4 und 7     A = wahr, C = falsch (oder nicht evaluiert), D nicht evaluiert,
+               (A && B) || (C && D) = B
+C: 4 und 6     A = wahr, B = falsch, D = wahr (oder nicht evaluiert),
+               (A && B) || (C && D) = C
+D: 5 und 6     A = C = wahr, B = falsch, (A && B) || (C && D) = D
 
 e)
 
-1-16
+1-16, bei vollständiger Evaluation gibt es immer 2^n (hier: n=4) Testfälle
 
 f)
 
-1-7
+1-7, s. Tabelle
