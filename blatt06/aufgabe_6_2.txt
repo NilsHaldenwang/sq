@@ -1,0 +1,30 @@
+Aufgabe 6.2: McCabe-Überdeckungstest
+------------------------------------
+
+a) Siehe Bild
+
+b) M = e - n + 2
+   e: Zahl der Kanten
+   n: Zahl der Knoten
+   => M = 11 - 9 + 2 = 4
+
+c) Die Zahl sagt im allgemeinen etwas über die Komplexität der betrachteten
+   Funktion aus, indem die Zahl binärer Verzweigungen gezählt wird. Weiterhin
+   liefert sie direkt die Anzahl der maximal nötigen Testfälle und der
+   Elementarpfade.
+
+d)
+      (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11)
+      -----------------------------------
+  I   (1, 1, 0, 1, 0, 1, 1, 1, 1,  1,  1) (Verlauf bei negativem Exponenten)
+  II  (1, 0, 1, 0, 1, 1, 1, 1, 1,  0,  0) (Verlauf bei positiver Exponenten)
+  III (1, 0, 1, 0, 0, 1, 0, 0, 1,  0,  0) (Verlauf bei Exponent = 0)
+  IV  (1, 1, 0, 1, 0, 1, 0, 0, 0,  1,  1) (Unmöglich zu erzeugen)
+
+e) 0 * I + 1 * II + 0 * III + 0 * IV
+
+f) I:   x = 2, n = -2
+   II:  x = 2, n = 2
+   III: x = 2, n = 0
+   IV:  Lässt sich nicht erzeugen, da die Verzweigungen Abhängigkeiten haben,
+        die im Widerspruch zu diesem Pfad stehen.
