@@ -1,0 +1,16 @@
+a)
+
+1. Beginn in Zeile  8, Ende in Zeile 14, Sprung nach Zeile 19
+2. Beginn in Zeile  8, Ende in Zeile 13, Sprung nach Zeile 15
+3. Beginn in Zeile 15, Ende in Zeile 19, Sprung nach Zeile 22
+3. Beginn in Zeile 15, Ende in Zeile 22, Sprung nach Zeile 19
+4. Beginn in Zeile 19, Ende in Zeile 22, Sprung nach Zeile 19
+5. Beginn in Zeile 19, Ende in Zeile 19, Sprung nach Zeile 24
+6. Beginn in Zeile 24, Ende in Zeile 28, Exit
+7. Beginn in Zeile 24, Ende in Zeile 24, Sprung nach Zeile 26
+8. Beginn in Zeile 26, Ende in Zeile 28, Exit
+
+b)
+
+Testfall 1: x beliebig, n = -1, LCSAJs: 1, 4, 5, 6
+Testfall 2: x beliebig, n = 0,  LCSAJs: 2, 3, 5, 7, 8
