@@ -54,6 +54,12 @@ welche also alle c-uses abdeckt erfüllt dieses Kriterium. Die Testfälle aus d)
 sind identisch mit den Testfällen aus c), daher erfüllen also diese beiden Testfälle
 das all-p-use-some-c-use-Kriterium.
 
+g)
+
+Das all-uses-Kriterium subsummiert die Kriterien aus e) und f) welche im
+vorliegenden Beispiel bereits durch identische Testfälle abgedeckt werden
+können, daher erfüllen die dort genannten Testfälle auch das
+all-uses-Kriterium.
 
 
 
