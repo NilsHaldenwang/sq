@@ -28,6 +28,15 @@ Die benötigten Testfälle sind daher:
 1. (n_start, n_in, n1, n2, n3, n4, n_out, n_final)
 2. (n_start, n_in, n1, n2, n4, n5, n6, n7, n6, n7, n8, n9, n8, n9, n_out, n_final)
 
-d) Alle c-uses werden über zwei Testfälle abgedeckt:
-   - (n_start, n_in, n1, n2, n3, n4, n_out, n_final) (für x aus n3)
-   - (n_start, n_in, n1, n2, n4, n5, n6, n7, n6, n7, n8, n9, n8, n9, n_out, n_final)
+d)
+
+Alle c-uses werden über zwei Testfälle abgedeckt:
+- (n_start, n_in, n1, n2, n3, n4, n_out, n_final) (für x aus n3)
+- (n_start, n_in, n1, n2, n4, n5, n6, n7, n6, n7, n8, n9, n8, n9, n_out, n_final)
+
+e)
+
+Die Mengen, dcu(zahl, n_in) und dcu(MAXIMUM, n1) sind leer. Verwendet man
+die Testfälle aus d) gibt es aber p-uses in (n2, n3), (n2, n4), (n4, n5),
+(n4, n_out) (für zahl aus n_in) sowie (n9, n8) und (n9, n_out) (für MAXIMUM
+aus n1). Damit sind auch die All-c-Some-p-Uses-Kriterien erfüllt.
