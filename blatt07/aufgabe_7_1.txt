@@ -16,3 +16,14 @@ Um das All-Defs-Kriterium zu erfüllen, sind drei Testpfade notwendig:
    - für epsilon aus n6: c-use in n6 und in n9
    - für x aus n8: p-use in (n8, n9)
    - für zaehler aus n8: p-use in (n8, n9)
+
+c)
+
+Die Menge dpu ist nur für zahl aus n_in ({(n2, n3), (n2, n4), (n4, n_out),
+(n4, n5), (n9, n8), (n9, n_out)}), MAXIMUM aus n1 ({(n9, n8), (n9, n_out)}),
+kopie aus n6 ({n7, n6), (n7, n8)}), epsilon aus n6 ({(n9, n8), (n9, n_out)}),
+x aus n8 ({(n9, n8), (n9, n_out)}) und zaehler aus n8 ({(n9, n8), (n9, n_out)})
+nicht leer.
+Die benötigten Testfälle sind daher:
+1. (n_start, n_in, n1, n2, n3, n4, n_out, n_final)
+2. (n_start, n_in, n1, n2, n4, n5, n6, n7, n6, n7, n8, n9, n8, n9, n_out, n_final)
