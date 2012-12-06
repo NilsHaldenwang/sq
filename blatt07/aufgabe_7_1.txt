@@ -1,0 +1,18 @@
+b)
+
+Um das All-Defs-Kriterium zu erfüllen, sind drei Testpfade notwendig:
+1. (n_start, n_in, n1, n2, n4, n_out, n_final)
+   - für x aus n1: c-use in n_out
+1. (n_start, n_in, n1, n2, n3, n4, n_out, n_final)
+   - für zahl aus n_in: p-use in (n2, n3)
+   - für x aus n3: c-use in n_out
+2. (n_start, n_in, n1, n2, n3, n4, n5, n6, n7, n6, n7, n8, n9, n_out, n_final)
+   - für epsilon aus n1: c-use in n6
+   - für MAXIMUM aus n1: p-use in (n9, n8)
+   - für zaehler aus n1: c-use in n8
+   - für x aus n5: c-use in n8
+   - für kopie aus n5: c-use in n6
+   - für kopie aus n6: c-use in n6
+   - für epsilon aus n6: c-use in n6 und in n9
+   - für x aus n8: p-use in (n8, n9)
+   - für zaehler aus n8: p-use in (n8, n9)
