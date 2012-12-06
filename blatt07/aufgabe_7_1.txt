@@ -1,6 +1,6 @@
 b)
 
-Um das All-Defs-Kriterium zu erfüllen, sind drei Testpfade notwendig:
+Um das All-Defs-Kriterium zu erfüllen, sind drei Testfälle notwendig:
 1. (n_start, n_in, n1, n2, n4, n_out, n_final)
    - für x aus n1: c-use in n_out
 1. (n_start, n_in, n1, n2, n3, n4, n_out, n_final)
@@ -27,3 +27,7 @@ nicht leer.
 Die benötigten Testfälle sind daher:
 1. (n_start, n_in, n1, n2, n3, n4, n_out, n_final)
 2. (n_start, n_in, n1, n2, n4, n5, n6, n7, n6, n7, n8, n9, n8, n9, n_out, n_final)
+
+d) Alle c-uses werden über zwei Testfälle abgedeckt:
+   - (n_start, n_in, n1, n2, n3, n4, n_out, n_final) (für x aus n3)
+   - (n_start, n_in, n1, n2, n4, n5, n6, n7, n6, n7, n8, n9, n8, n9, n_out, n_final)
