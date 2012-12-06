@@ -19,10 +19,13 @@ Um das All-Defs-Kriterium zu erfüllen, sind drei Testfälle notwendig:
 
 c)
 
-Die Menge dpu ist nur für zahl aus n_in ({(n2, n3), (n2, n4), (n4, n_out),
-(n4, n5), (n9, n8), (n9, n_out)}), MAXIMUM aus n1 ({(n9, n8), (n9, n_out)}),
-kopie aus n6 ({n7, n6), (n7, n8)}), epsilon aus n6 ({(n9, n8), (n9, n_out)}),
-x aus n8 ({(n9, n8), (n9, n_out)}) und zaehler aus n8 ({(n9, n8), (n9, n_out)})
+Die Menge dpu ist nur für
+zahl aus n_in   ({(n2, n3), (n2, n4), (n4, n_out), (n4, n5), (n9, n8), (n9, n_out)}),
+MAXIMUM aus n1  ({(n9, n8), (n9, n_out)}),
+kopie aus n6    ({n7, n6), (n7, n8)}),
+epsilon aus n6  ({(n9, n8), (n9, n_out)}),
+x aus n8        ({(n9, n8), (n9, n_out)}) und
+zaehler aus n8  ({(n9, n8), (n9, n_out)})
 nicht leer.
 Die benötigten Testfälle sind daher:
 1. (n_start, n_in, n1, n2, n3, n4, n_out, n_final)
@@ -40,3 +43,19 @@ Die Mengen, dcu(zahl, n_in) und dcu(MAXIMUM, n1) sind leer. Verwendet man
 die Testfälle aus d) gibt es aber p-uses in (n2, n3), (n2, n4), (n4, n5),
 (n4, n_out) (für zahl aus n_in) sowie (n9, n8) und (n9, n_out) (für MAXIMUM
 aus n1). Damit sind auch die All-c-Some-p-Uses-Kriterien erfüllt.
+
+f)
+
+Mit den dpu-Mengen aus c) und den dort erwähnten Testfällen wird der
+all-p-use-Teil des Kriteriums abgedeckt. Für alle Paare x, n_i, deren dpu-Menge
+leer ist, muss also noch ein definitionsfreier Pfad (n_i, n_j) bezüglich x
+gefunden werden, in dem n_j einen c-use von x enthält. Eine Menge von Testfällen,
+welche also alle c-uses abdeckt erfüllt dieses Kriterium. Die Testfälle aus d)
+sind identisch mit den Testfällen aus c), daher erfüllen also diese beiden Testfälle
+das all-p-use-some-c-use-Kriterium.
+
+
+
+
+
+
