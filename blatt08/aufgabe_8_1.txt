@@ -29,8 +29,66 @@ a)
 4. {[d5(x), r10(x)],
      [d10(x), r12(x)]}
 5. {[d6(kopie), r7(kopie)],
-     [d7(kopie), r9(kopie)]}     
+     [d7(kopie), r9(kopie)]}
 6. {[d8(epsilon), r8(epsilon)],
      [d8(epsilon), r8(epsilon)]}
 7. {[d8(epsilon), r8(epsilon)],
      [d8(epsilon), r12(epsilon)]}
+
+b)
+
+2-dr-Interaktionen:
+ 1. {[din(zahl), r2(zahl)]}
+    a) n_in, n1, n2, n3
+    b) n_in, n1, n2, n4
+ 2. {[din(kopie), rout(kopie)]}
+    a) n_in, n1, n2, n3, n4, n_out, n_final
+    b) n_in, n1, n2, n4, n_out, n_final
+ 3. {[d1(epsilon), r8(epsilon)]}
+    a) n1, n2, n3, n4, n5, n6, n7, n8, n9
+    b) n1, n2, n4, n5, n6, n7, n8, n9
+ 4. {[d1(epsilon), rout(epsilon)]}
+    a) n1, n2, n3, n4, n_out, n_final
+    b) n1, n2, n4, n_out, n_final
+ 5. {[d1(MAXIMUM), r12(MAXIMUM)]}
+    a) n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n10
+    b) n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n_out
+    c) n1, n2, n4, n5, n6, n7, n8, n9, n10, n11, n12, n10
+    d) n1, n2, n4, n5, n6, n7, n8, n9, n10, n11, n12, n_out
+ 6. {[d1(MAXIMUM), rout(MAXIMUM)]}
+    a) n1, n2, n3, n4, n_out, n_final
+    b) n1, n2, n4, n_out, n_final
+ 7. {[d1(x), rout(x)]}
+    n1, n2, n4, n_out, n_final
+ 8. {[d1(zaehler), r11(zaehler)]}
+    a) n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12
+    b) n1, n2, n4, n5, n6, n7, n8, n9, n10, n11, n12
+ 9. {[d1(zaehler), rout(zaehler)]}
+    a) n1, n2, n3, n4, n_out, n_final
+    b) n1, n2, n4, n_out, n_final
+10. {[d3(x), rout(x)]}
+    n3, n4, n_out, n_final
+11. {[d5(x), r10(x)]}
+    n5, n6, n7, n8, n9, n10, n11
+12. {[d6(kopie), r7(kopie)]}
+    n6, n7, n8
+13. {[d7(kopie), r9(kopie)]}
+    a) n7, n8, n9, n7
+    b) n7, n8, n9, n10
+14. {[d8(epsilon), r8(epsilon)]}
+    n8, n9
+15. {[d8(epsilon), r12(epsilon)]}
+    a) n8, n9, n10, n11, n12, n10
+    b) n8, n9, n10, n11, n12, n_out
+16. {[d10(x), r12(x)]}
+    a) n10, n11, n12, n10
+    b) n10, n11, n12, n_out
+17. {[d11(zaehler), r12(zaehler)]}
+    a) n11, n12, n10
+    b) n11, n12, n_out
+
+3-dr-Interaktionen:
+5. {[d6(kopie), r7(kopie)],
+     [d7(kopie), r9(kopie)]}
+   a) n6, n7, n8, n9, n7
+   b) n6, n7, n8, n9, n10
