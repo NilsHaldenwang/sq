@@ -42,30 +42,22 @@ b)
     a) n_in, n1, n2, n3
     b) n_in, n1, n2, n4
  2. {[din(kopie), rout(kopie)]}
-    a) n_in, n1, n2, n3, n4, n_out, n_final
-    b) n_in, n1, n2, n4, n_out, n_final
+    n_in, n1, n2, (n3,) n4, n_out, n_final
  3. {[d1(epsilon), r8(epsilon)]}
-    a) n1, n2, n3, n4, n5, n6, n7, n8, n9
-    b) n1, n2, n4, n5, n6, n7, n8, n9
+    n1, n2, (n3,) n4, n5, n6, n7, n8, n9
  4. {[d1(epsilon), rout(epsilon)]}
-    a) n1, n2, n3, n4, n_out, n_final
-    b) n1, n2, n4, n_out, n_final
+    n1, n2, (n3,) n4, n_out, n_final
  5. {[d1(MAXIMUM), r12(MAXIMUM)]}
-    a) n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n10
-    b) n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n_out
-    c) n1, n2, n4, n5, n6, n7, n8, n9, n10, n11, n12, n10
-    d) n1, n2, n4, n5, n6, n7, n8, n9, n10, n11, n12, n_out
+    a) n1, n2, (n3,) n4, n5, n6, n7, n8, n9, n10, n11, n12, n10
+    b) n1, n2, (n3,) n4, n5, n6, n7, n8, n9, n10, n11, n12, n_out
  6. {[d1(MAXIMUM), rout(MAXIMUM)]}
-    a) n1, n2, n3, n4, n_out, n_final
-    b) n1, n2, n4, n_out, n_final
+    n1, n2, (n3,) n4, n_out, n_final
  7. {[d1(x), rout(x)]}
     n1, n2, n4, n_out, n_final
  8. {[d1(zaehler), r11(zaehler)]}
-    a) n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12
-    b) n1, n2, n4, n5, n6, n7, n8, n9, n10, n11, n12
+    n1, n2, (n3,) n4, n5, n6, n7, n8, n9, n10, n11, n12
  9. {[d1(zaehler), rout(zaehler)]}
-    a) n1, n2, n3, n4, n_out, n_final
-    b) n1, n2, n4, n_out, n_final
+    n1, n2, (n3,) n4, n_out, n_final
 10. {[d3(x), rout(x)]}
     n3, n4, n_out, n_final
 11. {[d5(x), r10(x)]}
