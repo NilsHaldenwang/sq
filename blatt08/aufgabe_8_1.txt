@@ -1,0 +1,36 @@
+a)
+
+2-dr-Interaktionen:
+ 1. {[din(zahl), r2(zahl)]}
+ 2. {[din(kopie), rout(kopie)]}
+ 3. {[d1(epsilon), r8(epsilon)]}
+ 4. {[d1(epsilon), rout(epsilon)]}
+ 5. {[d1(MAXIMUM), r12(MAXIMUM)]}
+ 6. {[d1(MAXIMUM), rout(MAXIMUM)]}
+ 7. {[d1(x), rout(x)]}
+ 8. {[d1(zaehler), r11(zaehler)]}
+ 9. {[d1(zaehler), rout(zaehler)]}
+10. {[d3(x), rout(x)]}
+11. {[d5(x), r10(x)]}
+12. {[d6(kopie), r7(kopie)]}
+13. {[d7(kopie), r9(kopie)]}
+14. {[d8(epsilon), r8(epsilon)]}
+15. {[d8(epsilon), r12(epsilon)]}
+16. {[d10(x), r12(x)]}
+17. {[d11(zaehler), r12(zaehler)]}
+
+3-dr-Interaktionen:
+1. {[d1(epsilon), r8(epsilon)],
+     [d8(epsilon), r8(epsilon)]}
+2. {[d1(epsilon), r8(epsilon)],
+     [d8(epsilon), r12(epsilon)]}
+3. {[d1(zaehler), r11(zaehler)],
+     [d11(zaehler), r12(zaehler)]}
+4. {[d5(x), r10(x)],
+     [d10(x), r12(x)]}
+5. {[d6(kopie), r7(kopie)],
+     [d7(kopie), r9(kopie)]}     
+6. {[d8(epsilon), r8(epsilon)],
+     [d8(epsilon), r8(epsilon)]}
+7. {[d8(epsilon), r8(epsilon)],
+     [d8(epsilon), r12(epsilon)]}
