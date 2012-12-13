@@ -169,5 +169,5 @@ Eingaben:
 1. zahl = -1
 2. zahl = 0
 3. zahl = 1
-4. zahl = 
-5. zahl = 
+4. zahl = 9
+5. zahl = 81
