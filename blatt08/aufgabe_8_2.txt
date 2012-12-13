@@ -1,0 +1,48 @@
+a)
+
+Der Graph ist wie in Aufgabe 1.
+
+oec_1(n_2) = { d_in(zahl) }
+ODC(n_2) = [oec_1(n_2)]
+
+oec_1(n_4) = { d_in(zahl) }
+ODC(n_4) = [oec_1(n_4)]
+
+oec_1(n_5) = { d_in(zahl) }
+ODC(n_5) = [oec_1(n_5)]
+
+oec_1(n_6) = { d_in(zahl) }
+ODC(n_6) = [oec_1(n_6)]
+
+oec_1(n_7) = { d_6(kopie) }
+oec_2(n_7) = { d_9(kopie) }
+ODC(n_7) = [oec_1(n_7), oec_2(n_7)]
+
+oec_1(n_8) = { d_in(epsilon) }
+oec_2(n_8) = { d_8(epsilon) }
+ODC(n_8) = [oec_1(n_8), oec_2(n_8)]
+
+oec_1(n_9) = { d_7(kopie) }
+ODC(n_9) = [ oec_1(n_9) ]
+
+oec_1(n_10) = { d_in(zahl), d_5(x) }
+oec_3(n_10) = { d_in(zahl), d_10(x) }
+ODC(n_10) = [oec_1(n_10), oec_2(n_10)]
+
+oec_1(n_11) = { d_1(zaehler) }
+oec_2(n_11) = { d_11(zaehler) }
+ODC(n_11) = [ oec_1(n_11), oec_2(n_11) ]
+
+oec_1(n_12) = { d_in(zahl), d_1(epsilon), d_1(zaehler), d_1(MAXIMUM) }
+oec_2(n_12) = { d_in(zahl), d_1(zaehler), d_1(MAXIMUM), d_8(epsilon) }
+oec_3(n_12) = { d_in(zahl), d_1(epsilon), d_1(MAXIMUM), d_11(zaehler)}
+oec_4(n_12) = { d_in(zahl), ,d_1(MAXIMUM), d_8(epsilon), d_11(zaehler) }
+ODC(n_12) = [oec_1(n_12), oec_2(n_12), oec_3(n_12), oec_4(n_12)]
+
+oec_1(n_out) = { d_in(zahl), d_1(epsilon), d_1(MAXIMUM), d_1(x), d1(zahler), d_in(kopie) }
+oec_2(n_out) = { d_in(zahl), d_1(epsilon), d_1(MAXIMUM), d1(zaehler), d_in(kopie), d_3(x) }
+oec_3(n_out) = { d_in(zahl), d_in(epsilon), d_1(zaehler), d_1(MAXIMUM) }
+oec_4(n_out) = { d_in(zahl), d_1(zaehler), d_1(MAXIMUM), d_8(epsilon) }
+oec_5(n_out) = { d_in(zahl), d_in(epsilon), d_1(MAXIMUM), d_11(zaehler)}
+oec_6(n_out) = { d_in(zahl), ,d_1(MAXIMUM), d_8(epsilon), d_11(zaehler) }
+ODC(n_out) = [oec_1(n_out), oec_2(n_out), oec_3(n_out), oec_4(n_out), oec_5(n_out), oec_6(n_out)]
