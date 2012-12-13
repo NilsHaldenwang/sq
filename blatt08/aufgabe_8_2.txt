@@ -46,3 +46,11 @@ oec_4(n_out) = { d_in(zahl), d_1(zaehler), d_1(MAXIMUM), d_8(epsilon) }
 oec_5(n_out) = { d_in(zahl), d_in(epsilon), d_1(MAXIMUM), d_11(zaehler)}
 oec_6(n_out) = { d_in(zahl), ,d_1(MAXIMUM), d_8(epsilon), d_11(zaehler) }
 ODC(n_out) = [oec_1(n_out), oec_2(n_out), oec_3(n_out), oec_4(n_out), oec_5(n_out), oec_6(n_out)]
+
+b)
+
+Testpfade:
+
+(n_in, n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n11, n12, n_out)
+(n_in, n1, n2, n3, n4, n5, n6, n7, n8, n9, n7, n8, n9, n10, n11, n12, n10, n11, n12, n_out)
+(n_in, n1, n2, n4, n_out)
