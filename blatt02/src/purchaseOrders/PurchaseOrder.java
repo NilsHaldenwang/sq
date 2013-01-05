@@ -90,7 +90,7 @@ public class PurchaseOrder {
 		}
 		
 		if(!valid){
-			throw new IllegalArgumentException("Falsche Kantenlänge");
+			throw new IllegalArgumentException("Falsche Kantenl√§nge");
 		}
 		
 		return valid;
