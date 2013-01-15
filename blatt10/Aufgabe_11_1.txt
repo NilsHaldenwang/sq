@@ -1,0 +1,57 @@
+Aufgae 11.1: Mutationentest
+===========================
+
+a) Die Literale sind mit der Zeilennummer benannt, in der sie auftauchen:
+
+    #Mutation l23 l27 l28 l30 l33 l34
+    --------------------------------
+    #1         1   0   0   0   0   0
+    #2         0   1   0   0   0   0
+    #3         0   0   1   0   0   0
+    #4         0   0   0   1   0   0
+    #5         0   0   0   0   1   0
+    #6         0   0   0   0   0   1
+
+b) Der starke Mutationentest schließt Mutationen aus, welche zu einer
+   vom Original abweichenden Ausgabe führen.
+
+    Test A (-2, 3):
+      Original: -8.0
+      Mutation 1 (-8.0):     NICHT ERKANNT
+      Mutation 2 (-16.0):     ERKANNT
+      Mutation 3 (4.0):     ERKANNT
+      Mutation 4 (4.0):     ERKANNT
+      Mutation 5 (-8.0):     NICHT ERKANNT
+
+      -> erkennt 3/5 Mutanten
+
+    Test B (3, -4):
+      Original: 0.012345679012345678
+      Mutation 1 (0.012345679012345678):     NICHT ERKANNT
+      Mutation 2 (0.006172839506172839):     ERKANNT
+      Mutation 3 (0.037037037037037035):     ERKANNT
+      Mutation 4 (0.1111111111111111):     ERKANNT
+      Mutation 5 (0.012345679012345678):     NICHT ERKANNT
+
+      -> erkennt 3/5 Mutanten
+
+    Test C (-2, 0):
+      Original: 1.0
+      Mutation 1 (1.0):     NICHT ERKANNT
+      Mutation 2 (2.0):     ERKANNT
+      Mutation 3 (1.0):     NICHT ERKANNT
+      Mutation 4 (1.0):     NICHT ERKANNT
+      Mutation 5 (1.0):     NICHT ERKANNT
+
+      -> erkennt 1/5 Mutanten
+
+    => Die Tests A und B erkennen beide 3/5 Mutanten, Test C nur 1/5. Damit
+       sind A und B gleich gut, aber dennoch nicht adäquat.
+
+c) Der Score ist gegeben als:
+
+      MS = Anzahl toter Mutanten / ( Gesamtzahl Mutanten - Zahl äquivalenter Mutanten)
+
+      Ein Mutant ist zum Original äquivalent, wenn keine Testfälle existieren, die
+      den Mutanten identifizieren können.
+
