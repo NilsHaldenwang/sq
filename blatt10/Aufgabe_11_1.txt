@@ -38,7 +38,7 @@ b) Der starke Mutationentest schließt Mutationen aus, welche zu einer
     Test C (-2, 0):
       Original: 1.0
       Mutation 1 (1.0):     NICHT ERKANNT
-      Mutation 2 (2.0):     ERKANNT
+      Mutation 2 (2.0))     ERKANNT
       Mutation 3 (1.0):     NICHT ERKANNT
       Mutation 4 (1.0):     NICHT ERKANNT
       Mutation 5 (1.0):     NICHT ERKANNT
@@ -53,5 +53,14 @@ c) Der Score ist gegeben als:
       MS = Anzahl toter Mutanten / ( Gesamtzahl Mutanten - Zahl äquivalenter Mutanten)
 
       Ein Mutant ist zum Original äquivalent, wenn keine Testfälle existieren, die
-      den Mutanten identifizieren können.
+      den Mutanten identifizieren können. Der Mutationsscore ist 1, wenn ein Testfalle
+      adäquat ist.
 
+      Test A:
+        MS = 3 / (5 - 0) = 3/5 = 0.6
+
+      Test B:
+        MS = 3 / (5 - 0) = 3/5 = 0.6
+
+      Test C:
+        MS = 1 / (5 - 0) = 1/5 = 0.2
