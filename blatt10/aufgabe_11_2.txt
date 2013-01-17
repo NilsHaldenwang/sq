@@ -1,0 +1,24 @@
+4 - Indentation
+
+Konventionen zur Einrückung und maximalen Länge von Zeilen existieren, um
+geschriebenen Quelltext unter allen Entwicklungsumgebungen möglichst
+einheitlich dargestellt zu bekommen. Wird die Tabulatorlänge nicht einheitlich
+behandelt (beispielsweise 4 statt 8 Zeichen) würde Quellcode, der teilweise mit
+vier Leerzeichen pro Ebene und teilweise mit Tabs eingerückt ist, nicht zwingend
+korrekt dargestellt werden, wodurch Entwickler die Struktur eines Programms
+schwerer erfassen können.
+
+Denkbar wäre, wie häufig in anderen Konventionen zu sehen, das Einrücken mit
+Tabulatoren grundsätzlich zu verbieten und prinzipiell nur Leerzeichen zum
+Einrücken zu verwenden.
+
+
+9 - Naming Conventions
+
+Konventionen, die die Wahl von Bezeichnern betreffen, helfen im Code die
+Übersicht zu behalten. Dem Entwickler ist direkt klar, ob einer Bezeichner
+eine Konstante, eine Variable oder einen strukturierten Datentyp (Interface,
+Klasse, Enum) benennen.
+
+Alternativ wäre für Variablenbezeichner auch die ungarische Notation denkbar,
+so dass aus dem Bezeichner direkt dessen Datentyp ersichtlich ist.
